@@ -97,7 +97,7 @@ const Sidebar = ({ children }) => {
           </div>
         </div>
       </div>
-      <main className="w-3/4 main">{children}</main>
+      <main className={`main ${isOpen ? 'w-[80%]' : 'w-full'}`}>{children}</main>
     </div>
   );
 };
